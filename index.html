@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/desktop.css" />
+    <link rel="stylesheet" href="./assets/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Tip calculator app</title>
+  </head>
+
+  <body>
+    <div class="attribution">
+      <h2>
+        SPLI <br />
+        TTER
+      </h2>
+
+      <div class="calculator-wrapper">
+        <div class="input-wrapper">
+          <div class="bill-input">
+            <input placeholder="0" type="number" id="bill" />
+            <div class="label-container">
+              <label for="bill">Bill</label>
+              <label class="error">Should be more than 0</label>
+            </div>
+            <span class="dollar">$</span>
+          </div>
+
+          <div class="select-wrapper">
+            <label> Select Tip %</label>
+            <div class="selects">
+              <div class="radio-wrapper">
+                <input type="radio" value="5" id="1" name="radio" />
+                <label class="radio-label" for="1">5%</label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" value="10" id="2" name="radio" />
+                <label class="radio-label" for="2">10%</label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" value="15" id="3" name="radio" />
+                <label class="radio-label" for="3">15%</label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" value="25" id="4" name="radio" />
+                <label class="radio-label" for="4">25%</label>
+              </div>
+              <div class="radio-wrapper">
+                <input type="radio" value="50" id="5" name="radio" />
+                <label class="radio-label" for="5">50%</label>
+              </div>
+
+              <input class="custom" type="number" placeholder="Custom" />
+            </div>
+          </div>
+          <div class="people-count">
+            <input type="number" id="people" placeholder="0" />
+            <div class="label-container">
+              <label for="people">People</label>
+              <label class="error">Should be more than 0</label>
+            </div>
+            <span><i class="fas fa-user"></i></span>
+          </div>
+        </div>
+
+        <!-- ---------------------------- -->
+
+        <div class="display-amount">
+          <div class="tip-amount">
+            <div class="text">
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <div class="amount">0</div>
+          </div>
+
+          <div class="total-amount">
+            <div class="text">
+              <p>Total Amount</p>
+              <span>/ person</span>
+            </div>
+            <div class="amount">0</div>
+          </div>
+
+          <div class="button-wrapper">
+            <button class="reset-button disabled">CONFIRM</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
