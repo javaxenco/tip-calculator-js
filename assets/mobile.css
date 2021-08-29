@@ -23,8 +23,8 @@
     margin-bottom: 1rem;
   }
   
-  .display-amount > div .text p {
-   font=size: 1.4rem; 
+  .text p {
+   font=size: 1.4rem !important; 
   }
 
   .amount {
