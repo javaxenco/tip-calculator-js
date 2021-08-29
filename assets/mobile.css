@@ -22,6 +22,10 @@
   .total-amount {
     margin-bottom: 1rem;
   }
+  
+  .display-amount > div .text p {
+   font=size: 1.4rem; 
+  }
 
   .amount {
     font-size: 2rem !important;
